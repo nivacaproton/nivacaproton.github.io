@@ -1,0 +1,99 @@
+body {
+  font-family: Neuton;
+  font-size: 1.2em;
+  margin-left: 2em;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jacquard 12', serif;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2`em;
+  color: saddlebrown;
+  display: block;
+}
+
+tei-author {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+
+tei-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+}
+
+tei-div[type="DramatisPersonae"] {
+  margin-left: 4em;
+  display: block;
+  color: darkgreen;
+}
+
+tei-castItem tei-role {
+  font-weight: bold;
+  display: inline;
+  font-variant: small-caps;
+}
+
+tei-castItem tei-roleDesc {
+  display: inline;
+  font-style: italic;
+  color: yellowgreen;
+}
+
+tei-castItem tei-roleDesc::after {
+  content: "";
+  display: block;
+}
+
+tei-castGroup tei-roleDesc{
+  display: block;
+  font-weight: bold;
+  display: inline;
+  font-variant: small-caps;
+  color: darkgoldenrod;
+}
+
+tei-castGroup tei-roleDesc::after {
+  content: "";
+  display: block;
+}
+
+tei-castGroup tei-castItem{
+  margin-left: 1em;
+  display: inline;
+  font-style: italic;
+  color: yellowgreen;
+}
+tei-castGroup tei-castItem::after {
+  display: block;
+  content: "";
+}
+
+
+tei-l {
+  margin-left: 2em;
+  display: block;
+}
+
+tei-stage {
+  font-style: italic;
+  color: gray;
+  display: block;
+  margin-left: 2em;
+}
+
+tei-speaker {
+  font-weight: bold;
+  display: inline;
+  font-variant: small-caps;
+}

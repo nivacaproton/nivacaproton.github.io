@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/tei.css">
+  <script src="js/CETEI.js"></script>
+  <script>
+    let c = new CETEI();
+    let behaviors = {
+      "tei": {
+        "head": function(e) {
+          let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+          let result = document.createElement("h" + (level.numberValue>7 ? 7 : level.numberValue));
+          for (let n of Array.from(e.childNodes)) {
+            result.appendChild(n.cloneNode());
+          }
+          return result;
+        },
+        "lb": ["<br>"],
+        /* Insert a <p> with the content of the <pb>'s @n attribute inside it
+           Add a line above with CSS */
+        "pb": ["<p class=\"break\">$@n</p>"],
+        /* Para acceder a los elementos 
+        del teiHeader: */
+        "teiHeader": null,
+      }
+    };
+    c.addBehaviors(behaviors);
+    c.getHTML5('Hamlet_3.4.xml', function(data){
+      document.getElementsByTagName('body')[0].appendChild(data);
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+</body>
+</html>
