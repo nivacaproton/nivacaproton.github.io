@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="/mydata/Dropbox/Uniandes/01 Herramientas digitales 2025-20/Hamlet 3.4/odd/out/tei_sp.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+  <?xml-model href="/mydata/Dropbox/Uniandes/01 Herramientas digitales 2025-20/Hamlet 3.4/odd/out/tei_sp.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
 <?xml-model href="https://raw.githubusercontent.com/nivaca/hamleodd/refs/heads/main/tei_sp.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/nivaca/hamleodd/refs/heads/main/tei_sp.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -17,7 +19,7 @@
       <sourceDesc>
         <p>
           <l>Original en inglés tomado de: <ref target="https://internetshakespeare.uvic.ca/doc/Ham_Q2/scene/3.4/index.html"/>. </l>
-          Texto en español traducido por Nicolás Vaughan.
+          <l>Texto en español traducido por Nicolás Vaughan.</l>
         </p>
       </sourceDesc>
     </fileDesc>
@@ -250,7 +252,13 @@
           
           
           <stage xml:lang="eng" xml:id="a02uhliemv_eng" corresp="#a02uhliemv_spa">
-            Enter Hamlet.
+            <app xml:id="lc1_phq_chc">
+              <lem wit="#Q2">
+                Enter Hamlet.
+              </lem>
+              <rdg wit="#F1" 
+                type="variation-absent"/>
+            </app>
           </stage>
           <stage xml:lang="spa" xml:id="a02uhliemv_spa" corresp="#a02uhliemv_eng">
             Entra Hamlet.
@@ -259,7 +267,18 @@
           
           <sp who="#queen" xml:lang="eng" xml:id="dams5j81g3_eng" corresp="#dams5j81g3_spa">
             <speaker>Gertrard</speaker>
-            <l>I'll wait you. Fear me not.</l>
+            <l>
+              I'll 
+              <app xml:id="ewd_1gq_chc">
+                <lem wit="#Q2">
+                  warrant
+                </lem>
+                <rdg wit="#F1">
+                  wait
+                </rdg>
+              </app>
+              you. Fear me not.
+            </l>
             <l>Withdraw; I hear him coming.</l>
           </sp>
           <sp who="#queen" xml:lang="spa" xml:id="dams5j81g3_spa" corresp="#dams5j81g3_eng">
@@ -269,18 +288,11 @@
           </sp>
           
           
-          
-          <sp who="#hamlet" xml:lang="spa" xml:id="kioenksl_spa"
-            corresp="#kioenksl_eng">
-            <speaker/><l/>
-          </sp>
-          
-          
           <stage xml:lang="eng" xml:id="rtbevv315v_eng" corresp="#rtbevv315v_spa">
-            Polonius conceals himself behind the arras.
+            <supplied>Polonius conceals himself behind the arras.</supplied>
           </stage>
           <stage xml:lang="spa" xml:id="rtbevv315v_spa" corresp="#rtbevv315v_eng">
-            Polonio se esconde detrás del tapiz.
+            <supplied>Polonio se esconde detrás del tapiz.</supplied>
           </stage>
           
           
@@ -606,7 +618,7 @@
             <l>
               I took thee for thy 
               <app xml:id="ijr_m1m_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   better
                 </lem>
                 <rdg wit="#F1">
@@ -619,10 +631,19 @@
             <stage>To the <persName>Queen</persName></stage> <l>Leave wringing of your hands. Peace, sit you down,</l>
             <l>And let me wring your heart, for so I shall</l>
             <l>If it be made of penetrable stuff,</l>
-            <l>If damnèd custom have not brassed it so</l>
+            <l>If damnèd custom have not 
+              <app xml:id="pwd_lnt_chc">
+                <lem wit="#Q2">
+                  brassed
+                </lem>
+                <rdg wit="#F1">
+                  brazed
+                </rdg>
+              </app> 
+              it so</l>
             <l n="36">That it 
               <app xml:id="zph_lbm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   be
                 </lem>
                 <rdg wit="#F1">
@@ -668,7 +689,7 @@
             <l>Calls virtue hypocrite, takes off the rose</l>
             <l>From the fair forehead 
               <app xml:id="dyc_sbm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   of
                 </lem>
                 <rdg wit="#F1">
@@ -678,7 +699,7 @@
               an innocent love</l>
             <l>And
               <app xml:id="azh_tbm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   sets
                 </lem>
                 <rdg wit="#F1">
@@ -692,7 +713,7 @@
             <l>A rhapsody of words. Heaven's face does glow</l>
             <l>
               <app xml:id="s1t_vbm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   O'er
                 </lem>
                 <rdg wit="#F1">
@@ -703,7 +724,7 @@
             <l>
               With 
               <app xml:id="o42_1cm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   heated
                 </lem>
                 <rdg wit="#F1">
@@ -713,7 +734,7 @@
               visage, as against the doom,</l>
             <l>
               <app xml:id="kmx_gcm_tgc">
-                <lem wit="Q2">
+                <lem wit="#Q2">
                   Is
                 </lem>
                 <rdg wit="#F1">
@@ -744,23 +765,28 @@
           
           <sp who="#queen" xml:lang="eng" xml:id="OcbzBPJLsW_eng" corresp="#OcbzBPJLsW_spa">
             <speaker>Gertrard</speaker>
-            <l>Ay me, what 
-              act<app xml:id="akp_k51_xgc">
-                <lem wit="Q2">?</lem>
-                <rdg wit="#F1" 
-                  type="variation-orthography">,</rdg>
-              </app>
-            </l>
-            <l>That roars so 
-              <app xml:id="wdx_451_xgc">
-                <lem wit="#Q2">
-                  low'd
-                </lem>
-                <rdg wit="#F1" type="variation-orthography">
-                  loud
-                </rdg>
-              </app>
-              and thunders in the index?</l>
+            <app xml:id="jmv_xnt_chc">
+              <lem wit="#Q2">
+                <l>
+                  Ay me, what 
+                  act<app xml:id="akp_k51_xgc">
+                    <lem wit="#Q2">?</lem>
+                    <rdg wit="#F1" 
+                      type="variation-orthography">,</rdg>
+                  </app>
+                </l>
+                <l>
+                  That roars so low'd
+                  and thunders in the index?
+                </l>
+              </lem>
+              <rdg wit="#F1">
+                <p>
+                  Aye me; what act, that roares so lowd, &amp; 
+                  thunders in the Index.
+                </p>
+              </rdg>
+            </app>
           </sp>
           <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="OcbzBPJLsW_spa" corresp="#OcbzBPJLsW_eng">
@@ -787,7 +813,16 @@
             </stage>
             <l>Look here upon this picture, and on this,</l>
             <l>The counterfeit presentment of two brothers.</l>
-            <l>See what a grace was seated on this brow:</l>
+            <l>See what a grace was seated on 
+              <app xml:id="ttl_wrt_chc">
+                <lem wit="#Q2">
+                  this
+                </lem>
+                <rdg wit="#F1">
+                  his
+                </rdg>
+              </app> 
+              brow:</l>
             <l>Hyperion's curls, the front of Jove himself,</l>
             <l>An eye like Mars to threaten 
               <app xml:id="cqw_fv1_xgc">
@@ -833,26 +868,26 @@
             <!--            -->
             <!--<l xml:id="snt_dw1_xgc_a" next="#snt_dw1_xgc_b">
               Would step from this to this?
-            </l>  
-            <app xml:id="fr5_jw1_xgc">
+              </l>  
+              <app xml:id="fr5_jw1_xgc">
               <lem wit="#F1">
-                <l xml:id="snt_dw1_xgc_b" prev="#snt_dw1_xgc_a">
-                  Sense, sure, you have,
-                </l>
-                <l>Else could you not have motion, but sure that sense</l>
-                <l>Is apoplexed, for madness would not err,</l>
-                <l>Nor sense to ecstasy was ne'er so thralled</l>
-                <l>But it reserved some quantity of choice</l>
-                <l xml:id="crj_hw1_xgc_a" next="#crj_hw1_xgc_b">
-                  To serve in such a difference.
-                </l> 
+              <l xml:id="snt_dw1_xgc_b" prev="#snt_dw1_xgc_a">
+              Sense, sure, you have,
+              </l>
+              <l>Else could you not have motion, but sure that sense</l>
+              <l>Is apoplexed, for madness would not err,</l>
+              <l>Nor sense to ecstasy was ne'er so thralled</l>
+              <l>But it reserved some quantity of choice</l>
+              <l xml:id="crj_hw1_xgc_a" next="#crj_hw1_xgc_b">
+              To serve in such a difference.
+              </l> 
               </lem>
               <rdg wit="#Q2" 
-                type="variation-absent"/>
-            </app>
-            <l xml:id="crj_hw1_xgc_b" prev="#crj_hw1_xgc_a">
+              type="variation-absent"/>
+              </app>
+              <l xml:id="crj_hw1_xgc_b" prev="#crj_hw1_xgc_a">
               What devil was't
-            </l> -->
+              </l> -->
             <!--            -->
             <l part="I">
               Would step from this to this?
@@ -890,14 +925,31 @@
               <rdg wit="#F1" 
                 type="variation-absent"/>
             </app>
-            <l xml:id="tjq_2kb_xgc_b" prev="#tjq_2kb_xgc_A">
-              O shame, where is thy blush?
-            </l>
-            <!--            -->
-            <l>Rebellious hell,</l>
+            <app xml:id="h2s_jst_chc">
+              <lem wit="#Q2">
+                <l xml:id="tjq_2kb_xgc_b" prev="#tjq_2kb_xgc_A">
+                  O shame, where is thy blush?
+                </l>
+                <l>Rebellious hell,</l>
+              </lem>
+              <rdg wit="#F1">
+                <l>
+                  O shame, where is thy blush?
+                  Rebellious hell,</l>
+              </rdg>
+            </app>
             <l>If thou canst mutine in a matron's bones,</l>
             <l>To flaming youth let virtue be as wax</l>
-            <l>And melt in her own fire. Proclaim no shame</l>
+            <l>
+              <app xml:id="mmv_nst_chc">
+                <lem wit="#Q2">
+                  And
+                </lem>
+                <rdg wit="#F1">
+                  As
+                </rdg>
+              </app> 
+              melt in her own fire. Proclaim no shame</l>
             <l>When the compulsive ardor gives the charge,</l>
             <l>Since frost itself as actively doth burn,</l>
             <l>And reason pardons will.</l>
@@ -950,12 +1002,47 @@
           <sp who="#queen" xml:lang="eng" xml:id="wsg_3l3_qgc_eng" corresp="#wsg_3l3_qgc_spa">
             <speaker>Gertrard</speaker>
             <l>Oh, <persName>Hamlet</persName> speak no more!</l>
-            <l>Thou turn'st my very eyes into my soul,</l>
-            <l>And there I see such black and grievèd spots</l>
-            <l>As will leave there their tinct.</l>
+            <l>Thou turn'st 
+              <app xml:id="bfj_rst_chc">
+                <lem wit="#Q2">
+                  my very
+                </lem>
+                <rdg wit="#F1">
+                  mine
+                </rdg>
+              </app> 
+              eyes into my 
+              <app xml:id="kcc_tst_chc">
+                <lem wit="#Q2" 
+                  n="my"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  very
+                </rdg>
+              </app>
+              soul,</l>
+            <l>And there I see such black and 
+              grievèd<app xml:id="ysn_5st_chc">
+                <lem wit="#Q2" 
+                  n="grievèd"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  grained
+                </rdg>
+              </app> 
+              spots</l>
+            <l>As will 
+              <app xml:id="st2_wst_chc">
+                <lem wit="#Q2">
+                  leave there
+                </lem>
+                <rdg wit="#F1">
+                  not leave
+                </rdg>
+              </app> 
+              their tinct.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="wsg_3l3_qgc_spa" corresp="#wsg_3l3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>¡Oh, Hamlet, no hables más!</l>
@@ -968,12 +1055,20 @@
           <sp who="#hamlet" xml:lang="eng" xml:id="grk_nl3_qgc_eng" corresp="#grk_nl3_qgc_spa">
             <speaker>Hamlet</speaker>
             <l>Nay, but to live</l>
-            <l>In the rank sweat of an enseamèd bed</l>
+            <l>In the rank sweat of an 
+              <app xml:id="bst_1tt_chc">
+                <lem wit="#Q2">
+                  enseamèd
+                </lem>
+                <rdg wit="#F1">
+                  inseemed
+                </rdg>
+              </app> 
+              bed</l>
             <l>Stewed in corruption, honeying and making love</l>
             <l>Over the nasty sty!</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="grk_nl3_qgc_spa" corresp="#grk_nl3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>No, sino vivir</l>
@@ -987,11 +1082,19 @@
           <sp who="#queen" xml:lang="eng" xml:id="khw_pl3_qgc_eng" corresp="#khw_pl3_qgc_spa">
             <speaker>Gertrard</speaker>
             <l>Oh, speak to me no more!</l>
-            <l>These words like daggers enter in my ears.</l>
+            <l>These words like daggers enter in 
+              <app xml:id="r52_dtt_chc">
+                <lem wit="#Q2">
+                  my
+                </lem>
+                <rdg wit="#F1">
+                  mine
+                </rdg>
+              </app> 
+              ears.</l>
             <l>No more, sweet <persName>Hamlet</persName>.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="khw_pl3_qgc_spa" corresp="#khw_pl3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>¡Oh, no me hables más!</l>
@@ -1003,7 +1106,16 @@
           <sp who="#hamlet" xml:lang="eng" xml:id="wxd_rl3_qgc_eng" corresp="#wxd_rl3_qgc_spa">
             <speaker>Hamlet</speaker>
             <l>A murderer and a villain,</l>
-            <l>A slave that is not twentieth part the kith</l>
+            <l>A slave that is not twentieth part the 
+              <app xml:id="vgq_2tt_chc">
+                <lem wit="#Q2">
+                  kith
+                </lem>
+                <rdg wit="#F1">
+                  tythe
+                </rdg>
+              </app>
+            </l>
             <l>Of your precedent lord, a vice of kings,</l>
             <l>A cutpurse of the empire and the rule,</l>
             <l>That from a shelf the precious diadem stole</l>
@@ -1047,7 +1159,16 @@
             <l>A king of shreds and patches--</l>
             <stage>Seeing the <persName>Ghost</persName></stage>
             <l>Save me and hover o'er me with your wings,</l>
-            <l>You heavenly guards! What would your gracious figure?</l>
+            <l>
+              <app xml:id="o3p_jtt_chc">
+                <lem wit="#Q2">
+                  You
+                </lem>
+                <rdg wit="#F1">
+                  Your
+                </rdg>
+              </app>
+              heavenly guards! What would your gracious figure?</l>
           </sp>
           
           
@@ -1125,17 +1246,51 @@
           <sp who="#queen" xml:lang="eng" xml:id="q2r_rm3_qgc_eng" corresp="#q2r_rm3_qgc_spa">
             <speaker>Gertrard</speaker>
             <l>Alas, how is't with you,</l>
-            <l>That you do bend your eye on vacancy,</l>
-            <l>And with th'incorporal air do hold discourse?</l>
+            <l>That you 
+              <app xml:id="qbt_mtt_chc">
+                <lem wit="#Q2">
+                  do
+                </lem>
+                <rdg wit="#F1" 
+                  type="variation-absent"/>
+              </app> 
+              bend your eye on vacancy,</l>
+            <l>And with 
+              <app xml:id="fdq_4tt_chc">
+                <lem wit="#Q2">
+                  th'incorporal
+                </lem>
+                <rdg wit="#F1">
+                  their corporall
+                </rdg>
+              </app> 
+              air do hold discourse?</l>
             <l>Forth at your eyes your spirits wildly peep,</l>
             <l>And, as the sleeping soldiers in th'alarm,</l>
-            <l>Your bedded hair, like life in excrements,</l>
-            <l>Start up and stand on end. O gentle son,</l>
+            <l>Your 
+              <app xml:id="iyd_qtt_chc">
+                <lem wit="#Q2">
+                  bedded
+                </lem>
+                <rdg wit="#F1">
+                  beaded
+                </rdg>
+              </app> 
+              hair, like life in excrements,</l>
+            <l>Start up and stand 
+              <app xml:id="f1s_vtt_chc">
+                <lem wit="#Q2">
+                  on
+                </lem>
+                <rdg wit="#F1">
+                  an
+                </rdg>
+              </app> 
+              end. O gentle son,</l>
             <l>Upon the heat and flame of thy distemper</l>
             <l>Sprinkle cool patience. Whereon do you look?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="q2r_rm3_qgc_spa" corresp="#q2r_rm3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>Ay, ¿cómo estás tú,</l>
@@ -1155,14 +1310,15 @@
             <l>On him, on him! Look you how pale he glares!</l>
             <l>His form and cause conjoined, preaching to stones,</l>
             <l>Would make them capable.</l>
-            <stage>To the <persName>Ghost</persName></stage> 
+            <stage>
+              <supplied>To <persName>Ghost</persName></supplied>
+            </stage> 
             <l>Do not look upon me,</l>
             <l>Lest with this piteous action you convert</l>
             <l>My stern effects. Then what I have to do</l>
             <l>Will want true color, tears perchance for blood.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="ycg_ym3_qgc_spa" corresp="#ycg_ym3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>¡A él, a él! ¡Mira qué pálido contempla!</l>
@@ -1178,10 +1334,18 @@
           
           <sp who="#queen" xml:lang="eng" xml:id="dn5_1n3_qgc_eng" corresp="#dn5_1n3_qgc_spa">
             <speaker>Gertrard</speaker>
-            <l>To whom do you speak this?</l>
+            <l>To 
+              <app xml:id="lll_15t_chc">
+                <lem wit="#Q2">
+                  whom
+                </lem>
+                <rdg wit="#F1">
+                  who
+                </rdg>
+              </app> 
+              do you speak this?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="dn5_1n3_qgc_spa" corresp="#dn5_1n3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>¿A quién le dices esto?</l>
@@ -1192,8 +1356,7 @@
             <speaker>Hamlet</speaker>
             <l>Do you see nothing there?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="hzv_cn3_qgc_spa" corresp="#hzv_cn3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>¿No veis nada ahí?</l>
@@ -1204,8 +1367,7 @@
             <speaker>Gertrard</speaker>
             <l>Nothing at all, yet all that is I see.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="zk1_fn3_qgc_spa" corresp="#zk1_fn3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>Nada en absoluto, pero veo todo lo que hay.</l>
@@ -1216,8 +1378,7 @@
             <speaker>Hamlet</speaker>
             <l>Nor did you nothing hear?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="ny2_jn3_qgc_spa" corresp="#ny2_jn3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>¿Ni oísteis nada?</l>
@@ -1228,8 +1389,7 @@
             <speaker>Gertrard</speaker>
             <l>No, nothing but ourselves.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="gy2_mn3_qgc_spa" corresp="#gy2_mn3_qgc_eng">
             <speaker>Gertrudis</speaker>
             <l>Nada, salvo a nosotros mismos.</l>
@@ -1241,9 +1401,16 @@
             <l>Why, look you there, look how it steals away!</l>
             <l>My father in his habit as he lived.</l>
             <l>Look where he goes, even now out at the portal!</l>
+            <app xml:id="tpp_25t_chc">
+              <lem wit="#Q2" n="portal"/>
+              <rdg wit="#F1" type="variation-present">
+                <stage>
+                  Exit Ghost.
+                </stage>
+              </rdg>
+            </app>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="rvt_nn3_qgc_spa" corresp="#rvt_nn3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>¡Mira allá, mira cómo se escabulle!</l>
@@ -1253,22 +1420,13 @@
           </sp>
           
           
-          <stage xml:lang="eng" xml:id="mzw_pn3_qgc_eng" corresp="#mzw_pn3_qgc_spa">
-            Exit <persName>Ghost</persName>.
-          </stage>
-          <stage xml:lang="spa" xml:id="mzw_pn3_qgc_spa" corresp="#mzw_pn3_qgc_eng">
-            Sale el Espectro.
-          </stage>
-          
-          
           <sp who="#queen" xml:lang="eng" xml:id="elz_sn3_qgc_eng" corresp="#elz_sn3_qgc_spa">
             <speaker>Gertrard</speaker>
             <l>This is the very coinage of your brain.</l>
             <l>This bodiless creation ecstasy</l>
             <l>Is very cunning in.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="elz_sn3_qgc_spa" corresp="#elz_sn3_qgc_eng">
             <l>Esto es el puro cuño de tu cerebro.</l>
             <l>El éxtasis es muy hábil</l>
@@ -1278,25 +1436,108 @@
           
           <sp who="#hamlet" xml:lang="eng" xml:id="hqw_vn3_qgc_eng" corresp="#hqw_vn3_qgc_spa">
             <speaker>Hamlet</speaker>
-            <l>My pulse as yours doth temperately keep time,</l>
+            <l>
+              My 
+              <app xml:id="wmy_p5t_chc">
+                <lem wit="#Q2" 
+                  n="My"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  Extasie?
+                </rdg>
+              </app>
+              pulse as yours doth temperately keep time,</l>
             <l>And makes as healthful music. It is not madness</l>
             <l>That I have uttered. Bring me to the test,</l>
-            <l>And <supplied>I</supplied> the matter will reword, which madness</l>
+            <l>
+              And 
+              <app xml:id="a1c_55t_chc">
+                <lem wit="#Q2" 
+                  n="And"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  I
+                </rdg>
+              </app>
+              the matter will reword, which madness</l>
             <l>Would gambol from. Mother, for love of grace,</l>
-            <l>Lay not that flattering unction to your soul</l>
+            <l>Lay not 
+              that<app xml:id="lfp_w5t_chc">
+                <lem wit="#Q2" 
+                  n="that"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  a
+                </rdg>
+              </app> 
+              flattering unction to your soul</l>
             <l>That not your trespass but my madness speaks.</l>
             <l>It will but skin and film the ulcerous place,</l>
-            <l>Whiles rank corruption, mining all within,</l>
+            <l>
+              Whiles<app xml:id="shs_x5t_chc">
+                <lem wit="#Q2" 
+                  n="Whiles"/>
+                <rdg wit="#F1" 
+                  type="variation-present">
+                  Whilst
+                </rdg>
+              </app> 
+              rank corruption, mining all within,</l>
             <l>Infects unseen. Confess yourself to heaven,</l>
             <l>Repent what's past, avoid what is to come,</l>
-            <l>And do not spread the compost on the weeds</l>
-            <l>To make them ranker. Forgive me this my virtue,</l>
-            <l>For in the fatness of these pursy times</l>
+            <l>And do not spread the compost 
+              <app xml:id="b2w_z5t_chc">
+                <lem wit="#Q2">
+                  on
+                </lem>
+                <rdg wit="#F1">
+                  or
+                </rdg>
+              </app> 
+              the weeds</l>
+            <l>To make them 
+              <app xml:id="ll1_cvt_chc">
+                <lem wit="#Q2">
+                  ranker
+                </lem>
+                <rdg wit="#F1">
+                  ranke
+                </rdg>
+              </app>.
+              Forgive me this my virtue,</l>
+            <l>For in the fatness of 
+              <app xml:id="cdv_dvt_chc">
+                <lem wit="#Q2">
+                  these
+                </lem>
+                <rdg wit="#F1">
+                  this
+                </rdg>
+              </app> 
+              pursy times
+            </l>
             <l>Virtue itself of vice must pardon beg,</l>
-            <l>Yea, curb and woo for leave to do him good.</l>
+            <l>Yea, curb and 
+              <app xml:id="nqb_fvt_chc">
+                <lem wit="#Q2">
+                  woo
+                </lem>
+                <rdg wit="#F1">
+                  woe
+                </rdg>
+              </app>
+              for 
+              <app xml:id="yn5_gvt_chc">
+                <lem wit="#Q2">
+                  leave
+                </lem>
+                <rdg wit="#F1">
+                  live
+                </rdg>
+              </app> 
+              to do him good.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="hqw_vn3_qgc_spa" corresp="#hqw_vn3_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>Mi pulso como el tuyo mantiene tiempo moderado,</l>
@@ -1336,16 +1577,41 @@
             <l>And leave the purer with the other half.</l>
             <l>Good night. But go not to my uncle's bed;</l>
             <l>Assume a virtue if you have it not.</l>
-            <l>That monster custom, who all sense doth eat,</l>
-            <l>Of habits devil, is angel yet in this,</l>
-            <l>That to the use of actions fair and good</l>
-            <l>He likewise gives a frock or livery</l>
-            <l>That aptly is put on. Refrain tonight,</l>
+            <app xml:id="mxb_pvt_chc">
+              <lem wit="#Q2">
+                <l>That monster custom, who all sense doth eat,</l>
+                <l>Of habits devil, is angel yet in this,</l>
+                <l>That to the use of actions fair and good</l>
+                <l>He likewise gives a frock or livery</l>
+                <l part="I">That aptly is put on.</l>
+              </lem>
+              <rdg wit="#F1" 
+                type="variation-absent"/>
+            </app> 
+            <l part="F">
+              <app xml:id="e3m_tvt_chc">
+                <lem wit="#Q2">
+                  to refraine night
+                </lem>
+                <rdg wit="#F1">
+                  Refrain tonight
+                </rdg>
+              </app>,
+            </l>
             <l>And that shall lend a kind of easiness</l>
-            <l>To the next abstinence; the next more easy:</l>
-            <l>For use almost can change the stamp of nature,</l>
-            <l>And either <gap/> the devil, or throw him out</l>
-            <l>With wondrous potency. Once more good night,</l>
+            <l part="I">To the next abstinence;</l> 
+            <app xml:id="u2b_1wt_chc">
+              <lem wit="#Q2">
+                <l part="F">the next more easy:</l>
+                <l>For use almost can change
+                  the stamp of nature,</l>
+                <l>And either <gap/> the devil, or throw him out</l>
+                <l part="I">With wondrous potency.</l>
+              </lem>
+              <rdg wit="#F1" 
+                type="variation-absent"/>
+            </app> 
+            <l part="F">Once more good night,</l>
             <l>And when you are desirous to be blest,</l>
             <l>I'll blessing beg of you. For this same lord,</l>
             <l>I do repent; but heaven hath pleased it so</l>
@@ -1354,11 +1620,25 @@
             <l>I will bestow him, and will answer well</l>
             <l>The death I gave him. So, again, good night.</l>
             <l>I must be cruel only to be kind.</l>
-            <l>This bad begins, and worse remains behind.</l>
-            <l>One word more, good lady.</l>
+            <l>
+              <app xml:id="nzq_spk_chc">
+                <lem wit="#Q2">
+                  This
+                </lem>
+                <rdg wit="#F1">
+                  Thus
+                </rdg>
+              </app> bad begins, and worse remains behind.
+            </l>
+            <app xml:id="emt_5pk_chc">
+              <lem wit="#Q2">
+                <l>One word more, good lady.</l>
+              </lem>
+              <rdg wit="#F1" 
+                type="variation-absent"/>
+            </app>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="igv_243_qgc_spa" corresp="#igv_243_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>Oh, desecha la parte peor de él,</l>
@@ -1393,8 +1673,7 @@
             <speaker>Gertrard</speaker>
             <l>What shall I do?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="fcw_h43_qgc_spa" corresp="#fcw_h43_qgc_eng">
             <speaker>Gertrudis</speaker> 
             <l>¿Qué haré?</l>
@@ -1404,13 +1683,44 @@
           <sp who="hamlet" xml:lang="eng" xml:id="pfg_k43_qgc_eng" corresp="#pfg_k43_qgc_spa">
             <speaker>Hamlet</speaker>
             <l>Not this, by no means, that I bid you do:</l>
-            <l>Let the bloat King tempt you again to bed,</l>
+            <l>Let the 
+              <app xml:id="hdl_xpk_chc">
+                <lem wit="#Q2">
+                  blowt
+                </lem>
+                <rdg wit="#F1">
+                  blunt
+                </rdg>
+              </app>
+              King tempt you again to bed,</l>
             <l>Pinch wanton on your cheek, call you his mouse,</l>
             <l>And let him, for a pair of reechy kisses,</l>
             <l>Or paddling in your neck with his damned fingers,</l>
-            <l>Make you to ravel all this matter out</l>
+            <l>
+              Make you to 
+              <app xml:id="vhp_mpk_chc">
+                <lem wit="#Q2">
+                  rouell
+                </lem>
+                <rdg wit="#F1">
+                  ravel
+                </rdg>
+              </app> 
+              all this matter out
+            </l>
             <l>That I essentially am not in madness,</l>
-            <l>But mad in craft. 'Twere good you let him know,</l>
+            <l>
+              But 
+              <app xml:id="tgs_4pk_chc">
+                <lem wit="#Q2">
+                  mad
+                </lem>
+                <rdg wit="#F1">
+                  made
+                </rdg>
+              </app> 
+              in craft. 'Twere good you let him know,
+            </l>
             <l>For who that's but a <persName>queen</persName>, fair, sober, wise,</l>
             <l>Would from a paddock, from a bat, a gib,</l>
             <l>Such dear concernings hide? Who would do so?</l>
@@ -1420,8 +1730,7 @@
             <l>To try conclusions, in the basket creep,</l>
             <l>And break your own neck down.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="hamlet" xml:lang="spa" xml:id="pfg_k43_qgc_spa" corresp="#pfg_k43_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>No esto, de ninguna manera, que te ordeno hacer:</l>
@@ -1449,8 +1758,7 @@
             <l>And breath of life, I have no life to breathe</l>
             <l>What thou hast said to me.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#queen" xml:lang="spa" xml:id="xv3_m43_qgc_spa" corresp="#xv3_m43_qgc_eng"> 
             <l>Ten por seguro, si las palabras están hechas de aliento</l>
             <l>Y el aliento de vida, no tengo vida para respirar</l>
@@ -1462,8 +1770,7 @@
             <speaker>Hamlet</speaker>
             <l>I must to England. You know that?</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="pxn_q43_qgc_spa" corresp="#pxn_q43_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>Debo ir a Inglaterra. ¿Lo sabéis?</l>
@@ -1472,37 +1779,63 @@
           
           <sp who="#gertrude" xml:lang="eng" xml:id="n1l_s43_qgc_eng" corresp="#n1l_s43_qgc_spa">
             <speaker>Gertrard</speaker>
-            <l>Alack, I had forgot. 'Tis so concluded on.</l>
+            <app xml:id="oyn_g4k_chc">
+              <lem wit="#Q2">
+                <l>Alack, I had forgot.</l> 
+                <l>'Tis so concluded on.</l>
+              </lem>
+              <rdg wit="#F1">
+                <!-- #F1 lo tiene en un solo verso.-->
+                <l>
+                  Alack, I had forgot. 
+                  'Tis so concluded on.
+                </l>
+              </rdg>
+            </app>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#gertrude" xml:lang="spa" xml:id="n1l_s43_qgc_spa" corresp="#n1l_s43_qgc_eng">
             <speaker>Gertrudis</speaker>
-            <l>¡Ay, lo había olvidado! Así está decidido.</l>
+            <l>¡Ay, lo había olvidado!</l> 
+            <l>Así está decidido.</l>
           </sp>
           
           
           <sp who="#hamlet" xml:lang="eng" xml:id="r4f_v43_qgc_eng" corresp="#r4f_v43_qgc_spa">
             <speaker>Hamlet</speaker>
-            <l>There's letters sealed, and my two schoolfellows,</l>
-            <l>Whom I will trust as I will adders fanged,</l>
-            <l>They bear the mandate; they must sweep my way</l>
-            <l>And marshal me to knavery. Let it work,</l>
-            <l>For 'tis the sport to have the enginer</l>
-            <l>Hoist with his own petar<supplied>d</supplied>, and't shall go hard</l>
-            <l>But I will delve one yard below their mines,</l>
-            <l>And blow them at the moon. Oh 'tis most sweet</l>
-            <l>When in one line two crafts directly meet.</l>
+            <app xml:id="uyh_snk_chc">
+              <lem wit="#Q2">
+                <l>There's letters sealed, and my two schoolfellows,</l>
+                <l>Whom I will trust as I will adders fanged,</l>
+                <l>They bear the mandate; they must sweep my way</l>
+                <l>And marshal me to knavery. Let it work,</l>
+                <l>For 'tis the sport to have the enginer</l>
+                <l>Hoist with his own petar<supplied>d</supplied>, and't shall go hard</l>
+                <l>But I will delve one yard below their mines,</l>
+                <l>And blow them at the moon. Oh 'tis most sweet</l>
+                <l>When in one line two crafts directly meet.</l>
+              </lem>
+              <rdg wit="#F1" 
+                type="variation-absent"/>
+            </app>
             <l>This man shall set me packing.</l>
             <l>I'll lug the guts into the neighbor room.</l>
             <l>Mother, good night indeed. This counselor</l>
-            <l>Is now most still, most secret, and most grave,</l>
+            <l>Is now 
+              <app xml:id="t4m_3nk_chc">
+                <lem wit="#Q2">
+                  most
+                </lem>
+                <rdg wit="#F1" 
+                  type="variation-absent"/>
+              </app> 
+              still, most secret, and most grave,
+            </l>
             <l>Who was in life a most foolish prating knave.--</l>
             <l>Come, sir, to draw toward an end with you.--</l>
             <l>Good night, mother.</l>
           </sp>
-          
-          
+          <!--          -->
           <sp who="#hamlet" xml:lang="spa" xml:id="r4f_v43_qgc_spa" corresp="#r4f_v43_qgc_eng">
             <speaker>Hamlet</speaker>
             <l>Hay cartas selladas, y mis dos condiscípulos,</l>
@@ -1525,7 +1858,15 @@
           
           
           <stage xml:lang="eng" xml:id="dzf_x43_qgc_eng" corresp="#dzf_x43_qgc_spa">
-            Exit.
+            Exit
+            <app xml:id="bk4_3wt_chc">
+              <lem wit="#Q2" 
+                n="Exit"/>
+              <rdg wit="#F1" 
+                type="variation-present">
+                Hamlet tugging in Polinius
+              </rdg>
+            </app>.
           </stage>
           <stage xml:lang="spa" xml:id="dzf_x43_qgc_spa" corresp="#dzf_x43_qgc_eng">
             Sale.
